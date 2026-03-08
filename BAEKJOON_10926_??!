@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	char id[50]; // Before the array size was not declared. I fixed the runtime error by declaring the array size as [50].
+	scanf("%s", &id);
+	tolower(id);
+	printf("%s??!", &id);
+	return 0;
+}
