@@ -1,0 +1,18 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	long long A, B, C; // The range of each variable is from 1 to 10^12, so I used the long long type.
+	scanf("%lld %lld %lld", &A, &B, &C);
+	printf("%lld", A + B + C);
+	return 0;
+}
