@@ -1,0 +1,28 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	int N, K;
+	scanf("%d %d", &N, &K);
+	int numerator = 1, denominator1 = 1, denominator2 = 1;
+	for (int i = N; i > 0; i--) {
+		numerator *= i;
+	}
+	for (int i = K; i > 0; i--) {
+		denominator1 *= i;
+	}
+	for (int i = N - K; i > 0; i--) {
+		denominator2 *= i;
+	}
+	printf("%d\n", numerator / denominator1 / denominator2); // Formula : N! / (K! * (N - K)!)
+	return 0;
+}
