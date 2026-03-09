@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	int N, K;
+	scanf("%d %d", &N, &K);
+	if (K > N - K) K = N - K; // Formula : nCk = nC(n-k)
+	int result = 1;
+	for (int i = 1; i <= K; i++) {
+		result *= (N - i + 1) / i; // Formula : C(n, i) = C(n, i-1) * (n - i + 1) / i
+	}
+	printf("%d\n", result);
+}
