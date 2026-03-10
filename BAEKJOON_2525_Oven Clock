@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	int A, B, C;
+	scanf("%d %d", &A, &B);
+	scanf("%d", &C);
+
+	if (((A * 60) + B + C) < (24 * 60)) { // Adding C minutes to the start time (A : B), constrained to a maximum of 23 : 59.
+		printf("%d ", ((A * 60) + B + C) / 60); // Calculates the hour only.
+	}
+	else {
+		printf("%d ", (((A * 60) + B + C) / 60) - 24); // Adding C minutes to the start time (A : B), surpassing the 23 : 59.
+	}
+
+	printf("%d", ((A * 60) + B + C) % 60); // The minute part is identical.
+	return 0;
+}
