@@ -1,0 +1,32 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+long long comb(int n, int m) {
+	if (n > m - n) n = m - n;
+	long long result = 1;
+	for (int i = 1; i <= n; i++) {
+		result = result * (m - i + 1) / i;
+	}
+	return result;
+}
+
+int main() {
+	int T;
+	scanf("%d", &T);
+	for (int i = 0; i < T; i++) {
+		int N, M;
+		scanf("%d %d", &N, &M);
+		long long result = comb(N, M);
+		printf("%lld\n", result);
+	}
+	return 0;
+}
