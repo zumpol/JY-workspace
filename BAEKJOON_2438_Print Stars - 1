@@ -1,0 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	int N;
+	scanf("%d", &N);
+
+	for (int i = 1; i <= N; i++) {
+		for (int n = 0; n < i; n++) {
+			printf("*");
+		}
+		printf("\n"); // This line of code moved to ensure a newline after each row of stars.
+	}
+  return 0;
+}
