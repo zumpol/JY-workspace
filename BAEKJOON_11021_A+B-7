@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	int T, A, B;
+	scanf("%d", &T);
+  
+	for (int x = 0; x < T; x++) {
+		scanf("%d %d", &A, &B);
+		printf("Case #%d: %d\n", x + 1, A + B); // Append '\n' to every output.
+	}
+	return 0;
+}
