@@ -1,0 +1,74 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int compare(const void* a, const void* b) {
+	return *(int*)a - *(int*)b;
+}
+
+int avg(int N, int* num) {
+	long long avg1 = 0; // I used long long to prevent overflow.
+	for (int i = 0; i < N; i++) {
+		avg1 += num[i];
+	}
+	return (int)round((double)avg1 / N); // I used round() to round the value to the nearest integer.
+}
+
+int median(int N, int* num) {
+	return num[N / 2];
+}
+
+int mode(int *a) { // If the modes are multiple, pick the second smallest one.
+	int mode1 = a[0]; 
+	int cnt = 0; // The modes count to find the second mode.
+	int max_freq = 0; // The highest frequency stores max_freq.
+	for (int i = 0; i <= 8000; i++) { // First, I find the maximum frequency.
+		if (a[i] > max_freq) max_freq = a[i];
+	}
+	for (int i = 0; i <= 8000; i++) { // Second, I look for the second smallest mode of the max frequency.
+		if (a[i] == max_freq) {
+			mode1 = i - 4000; //  I converted the index back to the real value. 
+			cnt++;
+			if (cnt == 2) return mode1;
+		}
+	}
+	return mode1;
+}
+
+int range(int N, int* num) {
+	int max_num = num[0];
+	int min_num = num[0];
+	for (int i = 0; i < N; i++) {
+		if (num[i] > max_num) max_num = num[i];
+		if (num[i] < min_num) min_num = num[i];
+	}
+	return max_num - min_num;
+}
+
+int num[500005];
+int a[8005];
+
+int main() {
+	int N;
+	scanf("%d", &N);
+
+	for (int i = 0; i < N; i++) {
+		scanf("%d", &num[i]);
+		a[num[i] + 4000]++;
+	}
+
+	qsort(num, N, sizeof(int), compare);
+	printf("%d\n", avg(N, num));
+	printf("%d\n", median(N, num));
+	printf("%d\n", mode(a));
+	printf("%d\n", range(N, num));
+	return 0;
+}
