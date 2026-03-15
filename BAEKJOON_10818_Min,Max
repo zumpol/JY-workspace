@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	long long N;
+	scanf("%lld", &N);
+	long long *A = (long long*)malloc(sizeof(long long) * N); // Dynamic memory allocation use to manage memory efficiently.
+    
+	for (long long i = 0; i < N; i++) {
+		scanf("%lld", &A[i]);
+	}
+    
+	long long max_num = A[0];
+  long long min_num = A[0];
+
+	for (long long i = 0; i < N; i++) {
+		if (A[i] > max_num) max_num = A[i];
+    if (A[i] < min_num) min_num = A[i];
+	}
+    
+	printf("%lld %lld\n", min_num, max_num);
+	free(A); // Release allocated memory.
+	return 0;
+}
