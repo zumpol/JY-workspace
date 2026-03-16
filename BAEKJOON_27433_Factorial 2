@@ -1,0 +1,23 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+long long factorial(long long N) { // Use "long long" because of 20, which is larger than int.
+	if (N == 0) return 1;
+	else return N * factorial(N - 1); // The function calls itself with (n-1).
+}
+
+int main() {
+	long long N;
+	scanf("%lld", &N);
+	printf("%lld\n", factorial(N));
+	return 0;
+}
