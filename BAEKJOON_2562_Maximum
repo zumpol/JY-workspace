@@ -1,0 +1,28 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	int A[9] = { 0, };
+  int max_num = A[0];
+	int max_rank = 1;
+
+	for (int i = 0; i < 9; i++) { // Find the max_num and its position while inputs at the same time.
+		scanf("%d", &A[i]);
+		if (A[i] > max_num) {
+			max_num = A[i];
+			max_rank = i + 1;
+		}
+	}
+
+	printf("%d\n%d", max_num, max_rank);
+	return 0;
+}
