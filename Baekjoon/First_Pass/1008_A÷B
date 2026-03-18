@@ -13,6 +13,7 @@
 int main() {
 	int A, B; // 0 < A, B < 10 -> I used the int type for A and B because they are between 0 and 10.
 	scanf("%d %d", &A, &B);
+
 	printf("%.10lf", (double)A / (double)B); // I used %.10lf to ensure the error stays below 10^-9.
 	                                         // The double type is necessary for precise floating-point division.
 	return 0;
