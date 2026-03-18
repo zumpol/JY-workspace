@@ -12,25 +12,10 @@
 ---
 
 ### 📚 My Algorithm Workflow
-저는 단순한 풀이를 넘어 체계적인 3단계 아카이빙을 지향합니다.
-1. **First-Pass**: 문제를 처음 마주하고 해결하는 단계
-2. **Review-Archive**: 과거 오답과 디버깅 기록을 통합 복습 (Debug + Review)
-3. **Optimization-Lab**: 최적화 및 리팩토링 기록 (Refactor-Log)
+I don't just solve problems; I follow a structured **3-step archiving process** to ensure deep learning and continuous growth.
 
----
-
-### 🛠 Tech Stack
-<p>
-  <img src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</p>
-
----
-
-### 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=zumpol&show_icons=true&theme=radical" alt="Ji-yeon's Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zumpol&layout=compact&theme=radical" alt="Top Langs" />
-</p>
+1. **First-Pass**: Tackling and solving new challenges for the first time.
+2. **Review-Archive**: An integrated review of past errors and debugging logs (**Merging Debug & Review**).
+3. **Optimization-Lab**: Documenting code optimization and refactoring strategies (**Refactor-Log**).
 
 ---
