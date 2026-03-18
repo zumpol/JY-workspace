@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	int N, M, i, j;
+	scanf("%d %d", &N, &M);
+	int* a = (int*)malloc(N * sizeof(int)); // Allocate memory for N baskets using malloc.
+   
+  for (int x = 0; x < N; x++) {
+		a[x] = (x + 1); // Initialize each basket with its own number(1 to N).
+	}
+	for (int x = 0; x < M; x++) {
+    scanf("%d %d", &i, &j);
+		int tmp = a[i - 1]; // Swap the values using a temporary variable(tmp).
+		a[i - 1] = a[j - 1];
+		a[j - 1] = tmp;
+	}
+	for (int x= 0; x < N; x++) {
+		printf("%d ", a[x]);
+	}
+    
+	free(a);
+	return 0;
+}
