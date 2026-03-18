@@ -14,8 +14,8 @@
 ### 📚 My Algorithm Workflow
 I don't just solve problems; I follow a structured **3-step archiving process** to ensure deep learning and continuous growth.
 
-1. **First-Pass**: Tackling and solving new challenges for the first time.
-2. **Review-Archive**: An integrated review of past errors and debugging logs (**Merging Debug & Review**).
-3. **Optimization-Lab**: Documenting code optimization and refactoring strategies (**Refactor-Log**).
+1. **First-Pass**: Tackling and solving new challenges for the first time (**Solve**).
+2. **Review-Archive**: An integrated review of past errors and debugging logs (**Debug & Review**).
+3. **Optimization-Lab**: Documenting code optimization and refactoring strategies (**Refactor**).
 
 ---
