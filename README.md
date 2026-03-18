@@ -1,6 +1,6 @@
 # 👋 Hello, I'm Ji-yeon (@zumpol)
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=25&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Welcome+to+jy's+library;Sophomore+at+KMOU;Robotics+%26+Hardware+Enthusiast;Solving+C+Problems+Daily" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=25&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Welcome+to+jy's+workspace;Sophomore+at+KMOU;Robotics+%26+Hardware+Enthusiast;Solving+C+Problems+Daily" alt="Typing SVG" />
 </p>
 
 ---
