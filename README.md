@@ -7,7 +7,6 @@
 
 ### 💻 About Me
 - 🎓 **Major**: Intelligence and Control Systems Engineering @ KMOU
-- 🤖 **Interest**: Robotics, Hardware, and Embedded System
 
 ---
 
