@@ -8,8 +8,6 @@
 ### 💻 About Me
 - 🎓 **Major**: Intelligence and Control Systems Engineering @ KMOU
 - 🤖 **Interest**: Robotics, Hardware, and Embedded Systems
-- ✍️ **Daily Goal**: Solving and reviewing algorithms with English commit messages.
-- 🎯 **Current Focus**: Mastering C and building a solid foundation in hardware control.
 
 ---
 
