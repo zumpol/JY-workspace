@@ -7,16 +7,7 @@
 
 ### 💻 About Me
 - 🎓 **Major**: Intelligence and Control Systems Engineering @ KMOU
-- 🤖 **Interest**: Robotics, Hardware, and Embedded Systems
-
----
-
-### 🏆 Baekjoon Tier
-<p align="center">
-  <a href="https://solved.ac/zumpol">
-    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=zumpol" alt="Baekjoon Tier" />
-  </a>
-</p>
+- 🤖 **Interest**: Robotics, Hardware, and Embedded System
 
 ---
 
@@ -43,11 +34,3 @@
 </p>
 
 ---
-
-### 📫 Connect with Me
-- **Solving Status**: 150+ problems solved on Baekjoon.
-- **English Practice**: I write my commit logs in English to improve technical communication.
-
----
-<p align="center">
-  <i>
