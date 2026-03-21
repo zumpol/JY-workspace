@@ -19,8 +19,8 @@ int main() {
 		n[N % 42] = 1; // Set the value to 1 at the remainder's index. "Distinct" : 1
 	}
   
-	for (int j = 0; j <= 41; j++) {
-		if (n[j] == 1) {
+	for (int i = 0; i <= 41; i++) {
+		if (n[i] == 1) {
 			cnt += 1; // Add if the value is 1.
 		}
 	}
