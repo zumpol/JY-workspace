@@ -1,0 +1,39 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int cnt = 0; // The total number of recursions
+
+int recursion(const char* s, int l, int r) {
+    cnt++;
+    if (l >= r) return 1; // All characters matched.
+    else if (s[l] != s[r]) return 0; // Characters mismatched.
+    else return recursion(s, l + 1, r - 1); // Still checking whether it is a palindrome.
+}
+
+int isPalindrome(const char* s) {
+    return recursion(s, 0, strlen(s) - 1);
+}
+
+int main() {
+    int T;
+    scanf("%d", &T);
+    
+    for (int i = 0; i < T; i++) {
+        char s[1005];
+        scanf("%s", &s);
+        cnt = 0; // Reset 'cnt' for eact input.
+        int a = isPalindrome(s);
+        printf("%d %d\n", a, cnt);
+    }
+
+	return 0;
+}
