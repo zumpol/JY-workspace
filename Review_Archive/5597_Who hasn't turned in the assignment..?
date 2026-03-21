@@ -1,0 +1,29 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+    int student[31] = { 0, }; // All array elements are initially set to 0.
+    int N;
+    
+    for (int i = 0; i < 28; i++) { // Receive 28 inputs for students who turned in their assignment.
+        scanf("%d", &N);
+        student[N] = 1; // "Submitted" : 1
+    }
+    
+    for (int i = 1; i <= 30; i++) {
+        if(student[i] == 0){ // "Missing" : 0
+            printf("%d\n", i);
+        }
+    }
+    
+    return 0;
+}
