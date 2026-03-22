@@ -1,0 +1,39 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	int N, M;
+	int box[101] = { 0, };
+	scanf("%d %d", &N, &M);
+    
+	for (int a = 1; a <= N; a++) {
+		box[a] = a; // Initialize each basket with its own index number.
+	}
+    
+	for (int a = 0; a < M; a++) {
+		int i, j;
+		scanf("%d %d", &i, &j);
+		int temp = 0;
+		for (i; i < j; i++) { // Reverse the elements within the range[i,j]
+			temp = box[i];
+			box[i] = box[j];
+			box[j] = temp;
+			j--; // Move the right index to the left.
+		}
+	}
+    
+	for (int a = 1; a <= N; a++) {
+		printf("%d ", box[a]);
+	}
+    
+	return 0;
+}
