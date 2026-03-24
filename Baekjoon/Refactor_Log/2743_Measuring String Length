@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	char s[101];
+	scanf("%s", s);
+  int len = strlen(s); // Calculate the length of the string.
+	printf("%d\n", len); // Print the length of the string.
+	return 0;
+}
