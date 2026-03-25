@@ -17,7 +17,7 @@ int main() {
 	for (int i = 0; i < T; i++) {
 		char s[1001];
 		scanf("%s", s);
-    int len = strlen(s);
+    	int len = strlen(s);
 		printf("%c%c\n", s[0], s[len - 1]); // s[0] -> first character, s[len - 1] -> last character
     }
     
