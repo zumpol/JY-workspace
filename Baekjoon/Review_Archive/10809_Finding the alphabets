@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	char S[101];
+	int alp[26], cha;
+	scanf("%s", S);
+    
+	for (int i = 0; i < 26; i++) {
+		alp[i] = -1;
+	}
+    
+    int len = strlen(S);
+	for(int i = 0 ; i < len ; i++){
+		cha = S[i] - 'a'; // Change character to number index (a -> 0, b -> 1, ...)
+		if (alp[cha] == -1) { // Save the index only if it's the first occurrence.
+			alp[cha] = i;
+		}
+	}
+	for (int i = 0; i < 26; i++) {
+		printf("%d ", alp[i]);
+	}
+	return 0;
+}
