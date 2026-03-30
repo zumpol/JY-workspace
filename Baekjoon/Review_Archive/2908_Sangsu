@@ -1,0 +1,34 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _USE_MATH_DEFINES
+#define _CRT_MONSTDC_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include <limits.h>
+
+int main() {
+	char A[4], B[4];
+	char tmp;
+	scanf("%s %s", A, B);
+  
+	tmp = A[0];
+	A[0] = A[2];
+	A[2] = tmp; // The character swap for reversing string A.
+
+	tmp = B[0];
+	B[0] = B[2];
+	B[2] = tmp; // The character swap for reversing string B.
+	
+	if (strcmp(A, B) > 0) { // The comparison of reversed strings and the output of the larger value.
+		printf("%s", A);
+	}
+	else {
+		printf("%s", B);
+	}
+  
+	return 0;
+}
